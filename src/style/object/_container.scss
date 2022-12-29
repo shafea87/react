@@ -1,0 +1,21 @@
+.o-container {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include media-from($lg) {
+    max-width: $lg;
+  }
+
+  @include media-until($lg) {
+    max-width: $md;
+  }
+
+  @include media-until($md) {
+    max-width: $sm;
+  }
+}
